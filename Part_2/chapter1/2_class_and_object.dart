@@ -1,4 +1,4 @@
-import 'person.dart';
+import '1_person.dart';
 
 void main(){
   var person = new Person();

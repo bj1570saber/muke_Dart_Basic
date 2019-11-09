@@ -10,7 +10,7 @@ class Person{
   int age;
   final String gender;// read only
   /*
-//old fashion.
+//old fashion. can not assign 'final variable' such as gender.
   Person(String name, int age){
     this.name = name;
     this.age = age;
@@ -25,11 +25,12 @@ class Person{
 //  }
 
 //Person.withName(this.name); // error. The final variable did not assign a value
-  Person.withGender(this.gender);
+  Person.withGender(this.gender);// additional constructor
 
   void  work(){
     print('Name: $name  Age: $age  Gender: $gender');
   }
 //void work(int age){}      //error, function can not be overload.
 
+//In Summary, functions and constructor can not be overload.
 }

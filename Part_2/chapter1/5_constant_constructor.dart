@@ -4,6 +4,7 @@ void main(){
 
   //person.name = "Jerry"; error. all variable are final.
   person.work();
+  print('name: ${person.name}, age: ${person.age}, gender: ${person.gender}');
 }
 
 class Person{ // final variable makes code run faster.

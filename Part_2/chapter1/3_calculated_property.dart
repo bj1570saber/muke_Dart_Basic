@@ -5,14 +5,14 @@ void main(){
 
   print(rect.area);
 
-  rect.area = 200;
-  print(rect.high);
+  rect.area = 200; // this line will call set area calculated property.
+  print(rect.width);
 }
 
 class Rectangle{
   num width, high;
   // get the area calculated property base on W & H;
-  // this is not a function
+  // this is not a function, no parameters
   num get area{
     return width * high;
   }
@@ -20,8 +20,8 @@ class Rectangle{
   // num get area => width * high;
 
   //setting property: not a function
-      set area(value){
-        //width = 10;
-        width = value / 10;
-      }// not a good example
+  set area(value){
+    //width = 10;
+    width = value / 1;
+  }// not a good example
 }

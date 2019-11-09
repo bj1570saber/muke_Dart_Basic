@@ -10,7 +10,7 @@ main(){
   print('${student.isAdult}');
   student.run();
 
-  print('polynomial:');
+  print('\npolynomial:');
   Person p_1 = new Student();
   if(p_1 is Student){
     p_1.study();
@@ -28,7 +28,6 @@ class Student extends Person{
 
   @override
   bool get isAdult => age > 15;
-
 
   @override
   void run() {

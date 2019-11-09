@@ -1,5 +1,7 @@
 void main(){
-  var person = new Person('Tom', 20, 'Male');
+  var p_1 = new Person('Tom', 20, 'Male');
+  var map = {'name': 'Jerry', 'age': 28, 'gender': 'Male'};
+  var p_2 = new Person.withMap(map);
 }
 
 class Person{
@@ -13,6 +15,7 @@ class Person{
   Person.withMap(Map map):
         name = map["name"], age = map["age"], gender = map["gender"]{
     print("initial list body.");
+    print('name: $name, age: $age, gender: $gender');
   }
 
   void  work(){
